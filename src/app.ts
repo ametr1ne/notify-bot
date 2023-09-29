@@ -1,7 +1,8 @@
+import { Job } from "node-schedule";
 import { Context, Telegraf } from "telegraf";
 import "dotenv/config";
 import { Update } from "telegraf/typings/core/types/typegram";
-import schedule, { Job } from "node-schedule";
+const schedule = require("node-schedule");
 
 const bot: Telegraf<Context<Update>> = new Telegraf(process.env.BOT_TOKEN as string);
 
