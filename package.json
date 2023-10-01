@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon src/app.ts --exec ts-node",
     "build": "tsc src/app.ts",
-    "start": "node app.js"
+    "start": "node dist/app.js"
   },
   "dependencies": {
     "@types/node": "^20.5.1",
