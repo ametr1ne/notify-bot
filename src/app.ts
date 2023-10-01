@@ -13,9 +13,9 @@ let scheduled: Job | null = null;
 bot.start(async (ctx) => {
   ctx.reply(
     `Привет, малыш) Я буду тебе напоминать о том, что тебе нужно выпить таблетки каждый день.`
-  );
+  )
 
-  scheduled = schedule.scheduleJob("0 18 * * *", function () {
+  scheduled = schedule.scheduleJob("0 14 * * *", function () {
     const index = Math.floor(Math.random() * 7);
     ctx.sendMessage("что нужно выпить таблетку, " + compliments[index]);
   });
